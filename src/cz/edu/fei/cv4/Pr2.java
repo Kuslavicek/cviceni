@@ -12,7 +12,7 @@ public class Pr2 {
         int hadaneCislo = vstup.nextInt();
         int pocitadlo=0;
         int limit = 5;
-        String ne="";
+        String ne="U";
         while ((hadaneCislo != nahodneCislo)||(pocitadlo!=limit)) {
             if (hadaneCislo < nahodneCislo) {
                 System.out.print("Zkus větší číslo: ");
@@ -21,7 +21,7 @@ public class Pr2 {
             }
             if(pocitadlo==limit){
                 System.out.println("Prohra");
-                ne="Ne";
+                ne="Neu";
                 break;
             }
             hadaneCislo = vstup.nextInt();
