@@ -38,11 +38,12 @@ public class SpravcePole {
                 return suma()/pole.length;
         }
 
-        public void toString1(){
+        public String toString(){
+                String text="";
                 for(int i=0;i<pole.length;i++){
-                        System.out.print(pole[i]+" ");
+                        text=text+pole[i]+" ";
                 }
-                System.out.println();
+                return text;
         }
 
 }

@@ -22,6 +22,6 @@ public class Cv2 {
         System.out.println(spravce1.max());
         System.out.println(spravce1.suma());
         System.out.println(spravce1.prumer());
-        spravce1.toString1();
+        System.out.println(spravce1.toString());
     }
 }
