@@ -2,8 +2,8 @@ package cz.edu.fei.cv6;
 
 public class Kruh {
     double polomer;
-    Kruh(double polomerKruhu){
-    polomer=polomerKruhu;
+    Kruh(double polomer){
+    this.polomer=polomer;
     }
     public double dejObvod(){
         return polomer*2*Math.PI;
