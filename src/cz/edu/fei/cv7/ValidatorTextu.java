@@ -15,4 +15,4 @@ public class ValidatorTextu {
     public String toString(){
          return vzor;
         }
-    }
+}
