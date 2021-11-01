@@ -15,8 +15,8 @@ public class Cv1 {
     //String toString() - Vypíše informace o kostkce - pocetSten
 
     public static void main(String[] args) {
-        Kostka kostka1 = new Kostka(6);
-        System.out.println(kostka1.hodKostkou());
-        System.out.println(kostka1.toString());
+        Kostka kostka6 = new Kostka(6);
+        System.out.println(kostka6.hodKostkou());
+        System.out.println(kostka6.toString());
     }
 }
