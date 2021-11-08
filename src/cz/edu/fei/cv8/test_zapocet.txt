@@ -1,0 +1,59 @@
+V metodě main:
+	Vytvoř 2 CD, s alespoň 2 Zaznamy
+	Vytvoř CDPrehravac
+	Do CDPrehravac vlož prvni CD - vlozCD(...) 
+	Vypis aktualni Zaznam - vypisAktualniZaznam()
+	Prepni na předchozí Zaznam - predchoziZaznam()
+	Prepni na další Zaznam - dalsiZaznam()
+	Vyjmi CD - vyjmiCD() 
+	Vloz druhe CD - vlozCD(...) 
+	Vypis aktualni Zaznam - vypisAktualniZaznam()
+
+// Ve tride CDPrehravac vzdy vypisujte udalosti, chyby
+// udalosti -> napr. zavolani dalsiZaznam()  - Vypisu nove zpristupneny Zaznam
+// chyby -> napr. vkladani CD, pokud uz v prehravaci nejake je - Vypsat chybovou hlasku
+
+CDPrehravac
+	//neverejne atributy
+	CD vlozeneCD
+	int aktualniZaznamIndex
+
+	void vlozCD(CD cd) 
+		- ulozi vkladane cd do promene vlozeneCD (nutne kontrolovat, jestli už neni jine CD vloženo)
+
+	void vyjmiCD() 
+		- kontrola zda je vlozeno CD 
+			- pokud je vyjme CD z přehravače (vypise a nasledne nastavi vlozeneCD na null)
+
+	void vypisAktualniZaznam()
+		- kontrola zda je vlozeno CD
+			- vypise aktualni Zaznam
+
+	void predchoziZaznam()
+		- kontrola zda je vlozeno CD
+			- prepne na dalsi Zaznam na CD
+			- pokud je aktualni Zaznam posledni na CD, prepne se na prvni
+			
+	void dalsiZaznam()
+		- kontrola zda je vlozeno CD
+			- prepne na predchozi Zaznam na CD
+			- pokud je aktualni Zaznam prvni na CD, prepne se na posledni
+
+CD
+	//neverejne atributy
+	String nazev
+	Zaznam [] zaznamy
+
+	//verejne metody
+	Zaznam dejZaznam(int index) - vrati zaznam na indexu (musi byt osetreno proti preteceni)
+	int dejPocetZaznamu() - vrati pocet zaznamu na CD
+	String toString() - vypise nazev CD
+
+Zaznam
+	//neverejne atributy
+	String nazev
+	String autor
+	String druh
+
+	//verejne metody
+	toString() - vypise vsechny atributy
