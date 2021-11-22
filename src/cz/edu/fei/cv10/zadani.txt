@@ -1,0 +1,31 @@
+Priklad 1.
+Vytvorte UML diagram tříd (class diagram), který bude reprezentovat řešení zápočtového testu z minulého cvičení (naleznete v souborech  General/Zapocet/reseni.zip).
+Diagram bude obsahovat třídy Banka a Ucet. Zároven v něm budou reflektovány všechny atributy a metody.
+
+Pro tvorbu diagramu můžete využít např.: https://draw.io/ 
+
+----------------------------------------------------------
+
+Priklad 2.
+Vytvorte abstraktni tridu Zamestnanec (povinne casti nize). 
+
+Vytvorte alespon dve tridy, dle vaseho vyberu, které budou potomkem třídy Zamestnanec (napr. Programator, Manazer). 
+Tridy budou implementovat abstraktni metody rodicovske tridy (pracuj() a odpocivej()), ty budou do konzole vypisovat co zametnanec dela.
+Navic budou mít alespon jeden další atribut, který budou pouzivat v metode pracuj()/odpocivej().
+Potomci budou obsahovat metodu toString(), která bude vypisovat oba atributy rodice. 
+
+V metode main vytvorte instance obou potomku, zkuste nad nimi zavolat implementovane metody. 
+
+//povine casti tridy Zamestnanec
+abstract Zamestnanec
+	// atributy
+	String jmeno
+	double plat
+
+	// metody
+	abstract void pracuj() - bude implementovano v potomcich
+	abstract void odpocivej() - bude implementovano v potomcich
+
+	void predstavSe() - vypise jmeno a plat - napr. "Ahoj jmenuji se XY, a platí mě: 10000"
+
+	// toString() - vypis obou atributů - v potomcich bude pretizeno
